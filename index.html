@@ -28,70 +28,78 @@
   <body>
 
   	<div id="myCarousel" class="carousel slide">
+
   		<div class="item active">
   			<div id="headerimg">
+  				<a href="https://github.com/gavinmh/HelloTablet"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
   				<iframe src="http://player.vimeo.com/video/64749911?title=0&amp;byline=0&amp;portrait=0&amp;color=cccccc" width="1000" height="563" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
 
   			</div>
-  				<div class="container">
-  					<div class="carousel-caption">
-  						<h1 class=""></h1>
-  						<p class="lead"></p>
+  			<div class="container">
+  				<div class="carousel-caption">
+  					<h1 class=""></h1>
+  					<p class="lead"></p>
 
-  					</div>
   				</div>
   			</div>
-
-
   		</div>
 
 
+  	</div>
 
-  		<div class="container marketing">
-  			<div class="row">
-  				<div class="span4">
-  					<h2 class="">What is HelloTablet?</h2>
-  					<p class="">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-  					<p><a class="btn" href="#about">Read more »</a></p>
-  				</div><!-- /.span4 -->
-  				<div class="span4">
-  					<h2 class="">View on GitHub</h2>
-  					<ul>
-  						<li><a href="https://github.com/gavinmh/HelloTablet/zipball/master">Download <strong>ZIP File</strong></a></li>
-  						<li><a href="https://github.com/gavinmh/HelloTablet/tarball/master">Download <strong>TAR Ball</strong></a></li>
-  						<li><a href="https://github.com/gavinmh/HelloTablet">View On <strong>GitHub</strong></a></li>
-  					</ul>
+
+
+  	<div class="container marketing">
+  		<div class="row">
+  			<div class="span4">
+  				<h2 class="">What is HelloTablet?</h2>
+  				<p class="">HelloTablet is an app that answers polar questions. I built it as part of my Master's thesis at NYU.</p>
+  				<p><a class="btn" href="#about">Read more »</a></p>
+  			</div><!-- /.span4 -->
+  			<div class="span4">
+  				<h2 class="">View on GitHub</h2>
+  				<p class=""><a href="https://github.com/gavinmh/HelloTablet" class="btn">View the repository »</a></p>
+  			</div>
+  			<div class="span4">
+  				<h2 class="">How Does it Work?</h2>
+  				<p class="">HelloTablet predicts entailment relations to answer polar questions.</p>
+  				<p class=""><a class="btn" href="#howitworks">Read more »</a></p>
+  			</div><!-- /.span4 -->
+
+  		</div>
+
+  		<hr class="featurette-divider">
+
+  		<div class="featurette jetstrap-selected" id="about">
+  			<img style="margin-top:60px;" class="featurette-image pull-right jetstrap-highlighted" src="assets/img/nexus-7-perspective-view.png">
+  			<h2 class="featurette-heading">What is HelloTablet?</h2>
+  			<br>
+  			<p class="lead">HelloTablet is an app that can answer polar (yes-or-no) questions in addition to the factoid questions that are more commonly answered by Google Now, Siri, and others.</p>
+  			<p class="lead">The app demonstrates one use of a <a href="#">system for predicting entailment</a> that I designed as part of my Master's thesis at New York University.</p>
+  		</div>
+
+  		<hr class="featurette-divider">
+
+  		<div class="featurette" id="howitworks">
+  			<div style="float:left; width:40%">
+  				<h2 class="featurette-heading">How Does it Work?</h2>
+  				<br>
+  				<p class="lead">HelloTablet retrieves sentences from the web that are similar to the user's question.
+  					<br>
+  					<br>
+  					It predicts whether or not each of these sentences entails the question. HelloTablet then combines these predictions to return a final answers.</p>
   				</div>
-  				<div class="span4">
-  					<h2 class="">How Does it Work?</h2>
-  					<p class="">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-  					<p class=""><a class="btn" href="#">View details »</a></p>
-  				</div><!-- /.span4 -->
-
-  			</div>
-
-  			<div class="featurette" style="text-align:center;">
-
-  			</div>
-
-
-  			<hr class="featurette-divider">
-
-  			<div class="featurette jetstrap-selected" id="about">
-  				<img class="featurette-image pull-right jetstrap-highlighted" src="http://twitter.github.com/bootstrap/assets/img/examples/browser-icon-chrome.png">
-  				<h2 class="featurette-heading">HelloTablet is an app</h2>
-  				<p class="lead">that answers polar (yes or no) questions using plain English text. Hello Tablet demonstrates one use of a system I built for predicting entailment as part of my Master's thesis at NYU.</p>
-  			</div>
-
-
-
-
-  			<hr class="featurette-divider">
-
-  			<div class="featurette">
-  				<img class="featurette-image pull-right" src="http://twitter.github.com/bootstrap/assets/img/examples/browser-icon-safari.png">
-  				<h2 class="featurette-heading">HelloTablet predicts entailment</h2>
-  				<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+  				<div style="float:right; width:40%;">
+  					<h2 class="featurette-heading">What is Entailment?</h2>
+  					<br>
+  					<p class="lead">Entailment is the relationship between sentences that holds when one sentence follows from another. For example,</p>
+  					<p class="lead"><span style="color:#117ada;">"I ate food"</span> follows from <span style="color:#117ada;">"I ate pizza".</span>
+  						<br><br>
+  						<span style="color:#117ada;">"Someone passed the test"</span> follows from <span style="color:#117ada;">"Everyone passed the test".</span>
+  						<br><br>
+  						<span style="color:#117ada;">"Nobody ate"</span> does <strong>not</strong> follow from <span style="color:#117ada;">"Someone ate".</span></p>
+  					</p>
+  				</div>
   			</div>
 
   			<hr class="featurette-divider">
@@ -191,7 +199,6 @@
       }
       
       .carousel #headerimg {
-      	padding-top:60px;
       	position: absolute;
       	width: 100%;
       	background-color: #f0f0f0;
@@ -202,10 +209,6 @@
       	display: block;
       	margin: 0 auto;
       	width: 1000px;
-      	/*top: 0;*/
-      	/*left: 0;*/
-      	/*min-width: 100%;*/
-      	/*height: 500px;*/
       }
       
       
@@ -298,12 +301,6 @@
       	.carousel .item {
       		height: 500px;
       	}
-      	/*
-      	.carousel img {
-      		width: auto;
-      		height: 500px;
-      	}
-      	*/
 
       	.featurette {
       		height: auto;
@@ -335,11 +332,6 @@
       	.carousel .item {
       		height: 300px;
       	}
-      	/*
-      	.carousel img {
-      		height: 300px;
-      	}
-      	*/
       	.carousel-caption {
       		width: 65%;
       		padding: 0 70px;
