@@ -31,13 +31,13 @@ The following projects comprise HelloTablet:
 Dependencies
 ------------
 
-* NLTK
-* Scikit Learn
-* NetworkX
-* Stanford Dependency Parser
-* Stanford Tregex
-* Stanford Named Entity Recognizer
-* SENNA
+* [NLTK](http://nltk.org/)
+* [Scikit-Learn](http://scikit-learn.org/stable/)
+* [NetworkX](http://networkx.github.io/)
+* [Stanford Parser](http://nlp.stanford.edu/software/lex-parser.shtml)
+* [Stanford Tregex](http://nlp.stanford.edu/software/tregex.shtml)
+* [Stanford Named Entity Recognizer](http://nlp.stanford.edu/software/CRF-NER.shtml)
+* [SENNA](https://github.com/baojie/senna)
 
 
 Installation
