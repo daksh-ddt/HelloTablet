@@ -1,7 +1,7 @@
 HelloTablet
 ===========
 
-*This document is incomplete; I will update it over the next few days*
+*Note to self: finish this document!*
 
 Summary
 -------
@@ -18,11 +18,11 @@ speech synthesis.
 
 The following projects comprise HelloTablet:
 
-* HelloTablet-API
+* [HelloTablet-API](https://github.com/gavinmh/helloTablet-api)
 * HelloTablet client app for Android
 * Entailment API
 * Monotonicity Marker socket server
-* Factoid Answering API
+* [Factoid Answering API](https://github.com/gavinmh/Factoid-Question-Answering)
 
 *The repositories for these projects are public; I will be refactoring and documenting these projects better in the coming weeks.*
 
