@@ -31,13 +31,19 @@ The following projects comprise HelloTablet:
 Dependencies
 ------------
 
-* [NLTK](http://nltk.org/)
-* [Scikit-Learn](http://scikit-learn.org/stable/)
-* [NetworkX](http://networkx.github.io/)
-* [Stanford Parser](http://nlp.stanford.edu/software/lex-parser.shtml)
-* [Stanford Tregex](http://nlp.stanford.edu/software/tregex.shtml)
+* [NLTK](http://nltk.org/) for tokenization, POS tagging, interfacing to Wordnet, and for some lexical similarity measures, like Jiang-Conrath
+and Lin.
+* [Scikit-Learn](http://scikit-learn.org/stable/) for random forest and SVM implementations.
+* [NetworkX](http://networkx.github.io/) for coreference and anaphora resolution.
+* [Stanford Parser](http://nlp.stanford.edu/software/lex-parser.shtml) for shallow parsing. Currently Stanford Parser is only
+used when specific words are matched in a sentence.
+* [Stanford Tregex](http://nlp.stanford.edu/software/tregex.shtml) for searching parse trees with regex-like patterns to
+determine if specific words are in downward- or non-monotone contexts.
 * [Stanford Named Entity Recognizer](http://nlp.stanford.edu/software/CRF-NER.shtml)
-* [SENNA](https://github.com/baojie/senna)
+* [SENNA](https://github.com/baojie/senna) for semantic role labeling, to determine if sentence pairs contain 
+similar predicates, like "beat" and "defeated", and tagging argument types. Note that SENNA repeats several tasks in the
+pipeline(tokenization, POS tagging, shallow parsing). It was the fastest way I could implement semantic role labeling,
+ and is not a permanent solution.
 
 
 Installation
