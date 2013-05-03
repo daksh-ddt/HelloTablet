@@ -20,8 +20,9 @@ The following projects comprise HelloTablet:
 
 * [HelloTablet-API](https://github.com/gavinmh/helloTablet-api)
 * HelloTablet client app for Android
-* Entailment API
-* Monotonicity Marker socket server
+* [Aligner API](https://github.com/gavinmh/aligner-api): *Currently a different version of this is contained within the Entailment API. This service should be separated.*
+* [Entailment API](https://github.com/gavinmh/entailment-api)
+* [Monotonicity Marker socket server](https://github.com/gavinmh/MonotonicityMarker)
 * [Factoid Answering API](https://github.com/gavinmh/Factoid-Question-Answering)
 
 *The repositories for these projects are public; I will be refactoring and documenting these projects better in the coming weeks.*
