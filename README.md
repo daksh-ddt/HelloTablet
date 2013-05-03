@@ -24,8 +24,9 @@ The following projects comprise HelloTablet:
 * [Entailment API](https://github.com/gavinmh/entailment-api)
 * [Monotonicity Marker socket server](https://github.com/gavinmh/MonotonicityMarker)
 * [Factoid Answering API](https://github.com/gavinmh/Factoid-Question-Answering)
+* [tts API0(https://github.com/gavinmh/tts-api)
 
-*The repositories for these projects are public; I will be refactoring and documenting these projects better in the coming weeks.*
+*I will be refactoring and documenting these projects better in the coming weeks.*
 
 
 Dependencies
