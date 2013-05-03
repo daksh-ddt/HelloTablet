@@ -18,13 +18,29 @@ speech synthesis.
 
 The following projects comprise HelloTablet:
 
-* [HelloTablet-API](https://github.com/gavinmh/helloTablet-api)
+* [HelloTablet-API](https://github.com/gavinmh/helloTablet-api) accepts a plain-text, natural language polar or factoid
+question. It gathers evidence using the Bing API, and sends the question and evidence to either the Entailment or Factoid
+APIs. It returns JSON describing the answer and justification.
 * HelloTablet client app for Android
-* [Aligner API](https://github.com/gavinmh/aligner-api): *Currently a different version of this is contained within the Entailment API. This service should be separated.*
-* [Entailment API](https://github.com/gavinmh/entailment-api)
-* [Monotonicity Marker socket server](https://github.com/gavinmh/MonotonicityMarker)
-* [Factoid Answering API](https://github.com/gavinmh/Factoid-Question-Answering)
-* [tts API0(https://github.com/gavinmh/tts-api)
+* [Aligner API](https://github.com/gavinmh/aligner-api) predicts whether each token in a sentence should be paired with
+a token in the opposite sentence or deleted. 
+For example, given the sentences "Bob ate a sandwich" and "The man consumed tasty food," the following alignments
+should be produced:
+"Bob", "man"
+"ate", "consumed"
+"a", "The"
+"sandwich", "food"
+Delete "tasty"
+*Currently a different version of this is contained within the Entailment API. This service should be separated.*
+* [Entailment API](https://github.com/gavinmh/entailment-api) predicts what entailment relation exists between a pair
+of sentences.
+* [Monotonicity Marker socket server](https://github.com/gavinmh/MonotonicityMarker) finds the local monotonicity of
+tokens in the sentences.
+* [Factoid Answering API](https://github.com/gavinmh/Factoid-Question-Answering) answers factoid questions using
+plain text. This project is fairly incomplete.
+* [tts API0(https://github.com/gavinmh/tts-api) wraps Google Translate. It splits a given text into <100 character segments
+along word boundaries, retrieves and trims .mp3's from Google Translate, concatenates the result, and streams the 
+audio back to the Android app.
 
 *I will be refactoring and documenting these projects better in the coming weeks.*
 
