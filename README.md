@@ -6,22 +6,20 @@ HelloTablet
 Summary
 -------
 
-HelloTablet is an app that answers polar (yes or no) and factoid questions using plain text.
+HelloTablet is an Android app and back-end that answers polar (yes or no) and factoid questions using plain text.
 
-For example, when asked the question "was Barack Obama the first African American president?", HelloTablet should respond with
-something like "Yes; I found this: Barack Obama was the first African American to become president of the United States."
+For example, when asked the question "is Dallas the capital of Texas?", HelloTablet should respond with
+something like "I don't think so. I found this: the capital of Texas is Austin."
 
 HelloTabet is activated by saying the word "tablet". Once activated, HelloTablet transcribes your speech, predicts an
 answer, and talks back. HelloTablet uses Android's native speech recognizer and an API that wraps Google Translate for
 speech synthesis.
-
 
 The following projects comprise HelloTablet:
 
 * [HelloTablet-API](https://github.com/gavinmh/helloTablet-api) accepts a plain-text, natural language polar or factoid
 question. It gathers evidence using the Bing API, and sends the question and evidence to either the Entailment or Factoid
 APIs. It returns JSON describing the answer and justification.
-* HelloTablet client app for Android
 * [Aligner API](https://github.com/gavinmh/aligner-api) predicts whether each token in a sentence should be paired with
 a token in the opposite sentence or deleted. 
 For example, given the sentences "Bob ate a sandwich" and "The man consumed tasty food," the following alignments
@@ -41,13 +39,17 @@ plain text. This project is fairly incomplete.
 * [tts API0(https://github.com/gavinmh/tts-api) wraps Google Translate. It splits a given text into <100 character segments
 along word boundaries, retrieves and trims .mp3's from Google Translate, concatenates the result, and streams the 
 audio back to the Android app.
+* HelloTablet client app for Android. I am refactoring this project and have not yet made the repository public.
 
 *I will be refactoring and documenting these projects better in the coming weeks.*
 
-
-Dependencies
+Installation
 ------------
 
+###All OSes must install these dependencies:
+
+* [Python 2.7.4](http://python.org/download/releases/2.7.4/)
+* [Java](http://www.oracle.com/technetwork/java/javase/downloads/java-se-jre-7-download-432155.html)
 * [NLTK](http://nltk.org/) for tokenization, POS tagging, interfacing to Wordnet, and for some lexical similarity measures, like Jiang-Conrath
 and Lin.
 * [Scikit-Learn](http://scikit-learn.org/stable/) for random forest and SVM implementations.
@@ -60,11 +62,9 @@ determine if specific words are in downward- or non-monotone contexts.
 * [SENNA](https://github.com/baojie/senna) for semantic role labeling, to determine if sentence pairs contain 
 similar predicates, like "beat" and "defeated", and tagging argument types. Note that SENNA repeats several tasks in the
 pipeline(tokenization, POS tagging, shallow parsing). It was the fastest way I could implement semantic role labeling,
- and is not a permanent solution.
+ and is not a permanent solution. I use a modified version of SENNA, which SENNA's license prohibits me from 
+redistributing. I am working on a patch that will make the project compatible with the unmodified SENNA.
 
-
-Installation
-------------
-
+###Checkout the following projects:
 
 
